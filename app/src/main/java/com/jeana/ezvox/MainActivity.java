@@ -29,12 +29,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //getPermission();
         isStoragePermissionGranted();
 
         songView = (ListView) findViewById(R.id.song_list);
         songList = new ArrayList<Song>();
-        //getSongList();
+        getSongList();
 
         //optionally sort songs here
 
@@ -43,9 +42,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getSongList() {
+
         //retrieve song info
         ContentResolver musicResolver = getContentResolver();
-        Uri musicUri = android.provider.MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+        Uri musicUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
         Cursor musicCursor = musicResolver.query(musicUri, null, null, null, null);
 
         if (musicCursor != null && musicCursor.moveToFirst()) {
@@ -69,14 +69,14 @@ public class MainActivity extends AppCompatActivity {
 
      public  boolean isStoragePermissionGranted() {
          if (Build.VERSION.SDK_INT >= 23) {
-             if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+             if (checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE)
                      == PackageManager.PERMISSION_GRANTED) {
                  Log.v(TAG,"Permission is granted");
                  return true;
              } else {
 
                  Log.v(TAG,"Permission is revoked");
-                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
                  return false;
              }
          }
@@ -92,9 +92,7 @@ public class MainActivity extends AppCompatActivity {
           if(grantResults[0]== PackageManager.PERMISSION_GRANTED){
               Log.v(TAG,"Permission: "+permissions[0]+ "was "+grantResults[0]);
               //resume tasks needing this permission
-              System.out.println("get songs before");
               getSongList();
-                 System.out.println("get songs after");
 
           }
       }
