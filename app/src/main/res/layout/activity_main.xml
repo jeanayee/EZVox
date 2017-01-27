@@ -8,10 +8,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jeana.ezvox.MainActivity">
+    tools:context="com.jeana.ezvox.MainActivity"
+    android:layout_centerHorizontal="false">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="QUEUE"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/queuetitle"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/queuetitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/song_list"/>
+
 </RelativeLayout>
