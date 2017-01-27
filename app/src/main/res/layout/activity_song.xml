@@ -41,7 +41,7 @@
                 android:tint="@color/colorPrimaryDark"
                 android:id="@+id/button_previous"
                 android:scaleType="centerInside"
-                android:background="#fffff" />
+                android:background="#ffffff" />
 
             <ImageButton
                 android:layout_width="100dp"
@@ -50,7 +50,7 @@
                 android:tint="@color/colorPrimaryDark"
                 android:id="@+id/button_next"
                 android:scaleType="centerInside"
-                android:background="#fffff" />
+                android:background="#ffffff" />
 
         </LinearLayout>
 
@@ -67,7 +67,7 @@
                 android:tint="@color/colorPrimary"
                 android:id="@+id/button_record"
                 android:scaleType="centerInside"
-                android:background="#fffff" />
+                android:background="#ffffff" />
 
             <ImageButton
                 android:layout_width="100dp"
@@ -76,7 +76,7 @@
                 android:tint="@color/colorPrimary"
                 android:id="@+id/button_play"
                 android:scaleType="centerInside"
-                android:background="#fffff" />
+                android:background="#ffffff" />
 
             <ImageButton
                 android:layout_width="100dp"
@@ -85,7 +85,7 @@
                 android:tint="@color/colorPrimary"
                 android:id="@+id/button_stop"
                 android:scaleType="centerInside"
-                android:background="#fffff" />
+                android:background="#ffffff" />
 
         </LinearLayout>
 
