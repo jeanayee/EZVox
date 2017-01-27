@@ -105,6 +105,8 @@ public class MainActivity extends AppCompatActivity {
             }
             while (musicCursor.moveToNext());
         }
+
+        musicCursor.close();
     }
 
     public boolean isStoragePermissionGranted() {

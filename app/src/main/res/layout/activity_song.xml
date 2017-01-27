@@ -64,7 +64,7 @@
                 app:srcCompat="@drawable/record"
                 android:tint="@color/colorPrimary"
                 android:id="@+id/button_record"
-                android:scaleType="centerInside" />
+                android:scaleType="centerInside"/>
 
             <ImageButton
                 android:layout_width="100dp"
