@@ -1,22 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:ignore="UselessParent">
 
         <TextView
             android:text="@string/song_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
-            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
             android:id="@+id/song_title" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/album_cover"
+            android:contentDescription="@string/album_description"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/album_cover" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/previous"
+                android:tint="@color/colorPrimaryDark"
+                android:id="@+id/button_previous"
+                android:scaleType="centerInside"
+                android:background="#fffff" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/next"
+                android:tint="@color/colorPrimaryDark"
+                android:id="@+id/button_next"
+                android:scaleType="centerInside"
+                android:background="#fffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp">>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/record"
+                android:tint="@color/colorPrimary"
+                android:id="@+id/button_record"
+                android:scaleType="centerInside"
+                android:background="#fffff" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/play"
+                android:tint="@color/colorPrimary"
+                android:id="@+id/button_play"
+                android:scaleType="centerInside"
+                android:background="#fffff" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/stop"
+                android:tint="@color/colorPrimary"
+                android:id="@+id/button_stop"
+                android:scaleType="centerInside"
+                android:background="#fffff" />
+
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>
