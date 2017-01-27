@@ -40,8 +40,7 @@
                 app:srcCompat="@drawable/previous"
                 android:tint="@color/colorPrimaryDark"
                 android:id="@+id/button_previous"
-                android:scaleType="centerInside"
-                android:background="#ffffff" />
+                android:scaleType="centerInside" />
 
             <ImageButton
                 android:layout_width="100dp"
@@ -49,8 +48,7 @@
                 app:srcCompat="@drawable/next"
                 android:tint="@color/colorPrimaryDark"
                 android:id="@+id/button_next"
-                android:scaleType="centerInside"
-                android:background="#ffffff" />
+                android:scaleType="centerInside" />
 
         </LinearLayout>
 
@@ -66,8 +64,7 @@
                 app:srcCompat="@drawable/record"
                 android:tint="@color/colorPrimary"
                 android:id="@+id/button_record"
-                android:scaleType="centerInside"
-                android:background="#ffffff" />
+                android:scaleType="centerInside" />
 
             <ImageButton
                 android:layout_width="100dp"
@@ -75,8 +72,7 @@
                 app:srcCompat="@drawable/play"
                 android:tint="@color/colorPrimary"
                 android:id="@+id/button_play"
-                android:scaleType="centerInside"
-                android:background="#ffffff" />
+                android:scaleType="centerInside" />
 
             <ImageButton
                 android:layout_width="100dp"
@@ -84,8 +80,7 @@
                 app:srcCompat="@drawable/stop"
                 android:tint="@color/colorPrimary"
                 android:id="@+id/button_stop"
-                android:scaleType="centerInside"
-                android:background="#ffffff" />
+                android:scaleType="centerInside" />
 
         </LinearLayout>
 

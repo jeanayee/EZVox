@@ -136,7 +136,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     public void songPicked(View view) {
         int i = Integer.parseInt(view.getTag().toString());
         musicSrv.setSong(i);
@@ -148,5 +147,10 @@ public class MainActivity extends AppCompatActivity {
         stopService(playIntent);
         musicSrv = null;
         super.onDestroy();
+    }
+
+    public void selectSong(View view) {
+        Intent intent = new Intent(MainActivity.this, SongActivity.class);
+        startActivity(intent);
     }
 }
